@@ -43,6 +43,7 @@
             <small class="form-text text-muted" *ngIf="passwordField2.touched && !passwordField2.valid">Please enter the password again!</small>
             <small class="form-text text-muted" *ngIf="passwordField1.value !== passwordField2.value">Passwords do not match!</small>
         </div>
-        <button type="submit" class="btn btn-primary btn-block register-submit" [disabled]="!registerForm.valid">Submit</button>
+        <button type="submit" class="btn btn-primary btn-block mb-3 register-submit" [disabled]="!registerForm.valid">Submit</button>
+        <div *ngIf="successValue" style="text-align: center;">Login details submitted</div>
       </form>
 </div>

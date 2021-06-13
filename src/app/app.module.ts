@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { RegisterComponent } from './register/register.component';
 import { RegisterService } from './register.service';
+import { DataComponent } from './data/data.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { RegisterService } from './register.service';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
-      { path: 'register', component: RegisterComponent }
+      { path: 'register', component: RegisterComponent },
+      { path: 'data', component: DataComponent }
     ])
   ],
   declarations: [
@@ -38,7 +40,8 @@ import { RegisterService } from './register.service';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    RegisterComponent
+    RegisterComponent,
+    DataComponent
   ],
   bootstrap: [AppComponent],
   providers: [CartService,RegisterService]

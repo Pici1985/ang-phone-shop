@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "server",
+      "author": "BFdesigns"
+    },
+    {
+      "id": 3,
+      "title": "whatev-server",
+      "author": "Bazsimazsi"
+    },
+    {
+      "id": 4,
+      "title": "new post",
+      "author": "Bazsimazsi"
+    },
+    {
+      "id": 5,
+      "title": "new post",
+      "author": "Bazsimazsi"
+    },
+    {
+      "id": 9,
+      "title": "dfdfdf",
+      "author": "dhhddhdh"
+    },
+    {
+      "id": 11,
+      "title": "poco",
+      "author": "pici"
+    },
+    {
+      "id": 15,
+      "title": "pici",
+      "author": "ivett"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

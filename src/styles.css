@@ -29,12 +29,8 @@ app-product-list {
   padding: 1%;
   margin: 1%;
   border-radius: 5px;
-}
-
-app-product-list:hover{
   box-shadow: 0px 1px 2px 1px grey;
 }
-
 
 
 /* Text */

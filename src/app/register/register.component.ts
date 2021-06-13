@@ -18,9 +18,15 @@ export class RegisterComponent implements OnInit {
     email: "registerForm.value.emailAddressField",
     password: "registerForm.value.passwordField1"
   }; 
+
+  successValue: any = false;
   
   loginUser(registerForm: NgForm){
-    this.loginDetails = this._registerservice.sendData(this.loginDetails); 
+    this.loginDetails = this._registerservice.sendData(this.loginDetails);
+    this.successValue = true;
+    registerForm.reset();
+    setTimeout(()=>{                           
+      this.successValue = false;
+    }, 3000);
   }
-
 }

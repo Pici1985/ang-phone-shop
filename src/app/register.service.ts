@@ -8,6 +8,6 @@ export class RegisterService {
   constructor() { }
 
   sendData(loginDetails: Object){
-    console.log(loginDetails); // ez itt egy put method lesz inkabb a megadott pathra
+    console.log(JSON.stringify(loginDetails)); // ez itt egy put method lesz inkabb a megadott pathra
   }
 }
