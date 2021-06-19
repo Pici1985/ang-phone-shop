@@ -1,0 +1,19 @@
+<form [formGroup]="myForm" class="reactiveForm">
+
+    <!-- Value: {{myForm.value | json }} -->
+
+    <h1>Reactive form register</h1>
+
+    <hr>
+    
+    <mat-form-field>
+        <input matInput placeholder="Email" formControlName="email">    
+    </mat-form-field>    
+    <mat-form-field>
+        <input matInput placeholder="Password" formControlName="password">    
+    </mat-form-field>    
+    <mat-form-field>
+        <input matInput placeholder="Password again" formControlName="password_again">    
+    </mat-form-field>    
+
+</form>

@@ -1,0 +1,17 @@
+.reactiveForm {
+    display: grid;
+    border: 1px solid black;
+    margin: 5%;
+    padding: 5%;
+    width:fit-content;
+}
+
+mat-form-field {
+    width: 33vw;
+}
+
+.reactiveForm > h1 {
+    font: inherit;
+    font-size: 1.5rem;
+    text-align: center;
+}

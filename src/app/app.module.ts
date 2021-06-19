@@ -16,6 +16,16 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { RegisterComponent } from './register/register.component';
 import { RegisterService } from './register.service';
 import { DataComponent } from './data/data.component';
+import { AlternativeComponent } from './alternative/alternative.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatChipsModule } from '@angular/material/chips';
+
+
 
 @NgModule({
   imports: [
@@ -29,8 +39,15 @@ import { DataComponent } from './data/data.component';
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'register', component: RegisterComponent },
-      { path: 'data', component: DataComponent }
-    ])
+      { path: 'data', component: DataComponent },
+      { path: 'alternative', component: AlternativeComponent }
+    ]),
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatChipsModule 
   ],
   declarations: [
     AppComponent,
@@ -41,7 +58,8 @@ import { DataComponent } from './data/data.component';
     CartComponent,
     ShippingComponent,
     RegisterComponent,
-    DataComponent
+    DataComponent,
+    AlternativeComponent,
   ],
   bootstrap: [AppComponent],
   providers: [CartService,RegisterService]
